@@ -30,7 +30,7 @@
 /*
 ** Source:
 ** $PATSHOME/prelude/CATS/CODEGEN/cairo.atxt
-** Time of generation: Mon Sep 30 01:01:21 2013
+** Time of generation: Tue Oct  1 01:58:13 2013
 */
 
 /* ****** ****** */
@@ -270,6 +270,23 @@ atscntrb_cairo_version_string()
 #define atscntrb_cairo_ps_surface_dsc_begin_setup cairo_ps_surface_dsc_begin_setup
 #define atscntrb_cairo_ps_surface_dsc_begin_page_setup cairo_ps_surface_dsc_begin_page_setup
 #define atscntrb_cairo_ps_surface_dsc_comment cairo_ps_surface_dsc_comment
+//
+/* ****** ****** */
+//
+// Utilities: cairo-cairo-matrix-t
+//
+#define atscntrb_cairo_matrix_init cairo_matrix_init
+#define atscntrb_cairo_matrix_init_identity cairo_matrix_init_identity
+#define atscntrb_cairo_matrix_init_translate cairo_matrix_init_translate
+#define atscntrb_cairo_matrix_init_scale cairo_matrix_init_scale
+#define atscntrb_cairo_matrix_init_rotate cairo_matrix_init_rotate
+#define atscntrb_cairo_matrix_translate cairo_matrix_translate
+#define atscntrb_cairo_matrix_scale cairo_matrix_scale
+#define atscntrb_cairo_matrix_rotate cairo_matrix_rotate
+#define atscntrb_cairo_matrix_invert cairo_matrix_invert
+#define atscntrb_cairo_matrix_multiply cairo_matrix_multiply
+#define atscntrb_cairo_matrix_transform_distance cairo_matrix_transform_distance
+#define atscntrb_cairo_matrix_transform_point cairo_matrix_transform_point
 //
 /* ****** ****** */
 
