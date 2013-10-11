@@ -37,6 +37,9 @@ staload "{$GTK}/SATS/gdk.sats"
 staload "{$GTK}/SATS/gtk.sats"
 staload "{$GLIB}/SATS/glib.sats"
 staload "{$GLIB}/SATS/glib-object.sats"
+
+(* ****** ****** *)
+
 staload "{$CAIRO}/SATS/cairo.sats"
 
 (* ****** ****** *)
