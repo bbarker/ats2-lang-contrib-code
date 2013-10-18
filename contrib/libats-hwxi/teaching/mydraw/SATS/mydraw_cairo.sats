@@ -5,7 +5,7 @@
 (***********************************************************************)
 
 (*
-** Copyright (C) 2012-2013 Hongwei Xi, ATS Trustful Software, Inc.
+** Copyright (C) 2013 Hongwei Xi, ATS Trustful Software, Inc.
 **
 ** Permission is hereby granted, free of charge, to any person obtaining a
 ** copy of this software and associated documentation files (the "Software"),
@@ -24,63 +24,38 @@
 ** LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 ** FROM OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 ** IN THE SOFTWARE.
-** 
 *)
 
 (* ****** ****** *)
-
-(*
-** Functions for generating random data
-*)
-
+//
+// HX-2013-10:
+// A simple drawing package based on cairo
+//
 (* ****** ****** *)
 
 #define
-ATS_PACKNAME "ATSCNTRB.atshwxi.testing"
+ATS_PACKNAME "ATSCNTRB.libats-hwxi.teaching.mydraw"
 
 (* ****** ****** *)
-
-(*
-sortdef t0p = t@ype and vt0p = viewt@ype
-*)
-
+//
+#include
+"share/atspre_define.hats"
+//
 (* ****** ****** *)
 
-fun{}
-randint{n:pos} (n: int n): natLt (n)
+staload
+XR = "{$CAIRO}/SATS/cairo.sats"
+stadef cairo_ref = $XR.cairo_ref
+stadef cairo_ref1 = $XR.cairo_ref1
 
 (* ****** ****** *)
-
-fun{a:vt0p}
-randgen_val (): a // for randval generation
-fun{a:vt0p}
-randgen_ref (x: &a? >> a): void // for randval initialization
-
+//
+fun{
+} mydraw_get0_cairo (
+) : [l:agz] vttakeout0 (cairo_ref (l))
+//
+fun{} mydraw_get1_cairo (): cairo_ref1
+//
 (* ****** ****** *)
 
-fun{a:t0p}
-randgen_list {n:nat} (n: int n): list (a, n)
-fun{a:vt0p}
-randgen_list_vt {n:nat} (n: int n): list_vt (a, n)
-
-(* ****** ****** *)
-
-fun{a:vt0p}
-randgen_arrayptr
-  {n:int} (n: size_t(n)): arrayptr (a, n)
-fun{a:vt0p}
-randgen_arrayref
-  {n:int} (n: size_t(n)): arrayref (a, n)
-fun{a:vt0p}
-randgen_arrszref (n: size_t): arrszref (a)
-
-(* ****** ****** *)
-
-fun{a:vt0p}
-randarr_initize
-  {n:int} (A: &(@[a?][n]) >> @[a][n], n: size_t n): void
-// end of [randarr_initize]
-
-(* ****** ****** *)
-
-(* end of [randgen.sats] *)
+(* end of [mydraw_cairo.sats] *)

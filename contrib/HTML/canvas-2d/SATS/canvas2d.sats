@@ -55,26 +55,18 @@ vtypedef canvas2d0 = [l:agez] canvas2d (l)
 vtypedef canvas2d1 = [l:addr | l > null] canvas2d (l)
 //
 (* ****** ****** *)
-
+//
 castfn
-canvas2d2ptr {l:addr} (!canvas2d (l)):<> ptr (l)
+canvas2d2ptr{l:addr} (can: !canvas2d(l)):<> ptr(l)
 overload ptrcast with canvas2d2ptr
-
-(* ****** ****** *)
-//
-fun{
-} get0_canvas2d (
-) : [l:agz] vttakeout0 (canvas2d (l))
-//
-fun{} get1_canvas2d (): canvas2d1
 //
 (* ****** ****** *)
-
+//
 fun
 canvas2d_make (id: string): canvas2d0 = "ext#%"
-fun
-canvas2d_free (canvas: canvas2d0): void = "ext#%"
-
+//
+fun canvas2d_free (can: canvas2d0): void = "ext#%"
+//
 (* ****** ****** *)
 
 fun
@@ -217,12 +209,6 @@ overload canvas2d_set_shadowOffsetX with canvas2d_set_shadowOffsetX_double
 overload canvas2d_set_shadowOffsetY with canvas2d_set_shadowOffsetY_int
 overload canvas2d_set_shadowOffsetY with canvas2d_set_shadowOffsetY_double
 //
-(* ****** ****** *)
-
-fun canvas2d_set_size_int
-  (!canvas2d1, width: int(*px*), height: int(*px*)): void = "ext#%"
-// end of [canvas2d_set_size_int]
-
 (* ****** ****** *)
 
 absvtype gradient_vtype = ptr
