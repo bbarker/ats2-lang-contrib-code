@@ -29,7 +29,7 @@
 (* ****** ****** *)
 //
 // HX-2013-11:
-// A simple channel implementation
+// An array-based channel implementation
 //
 (* ****** ****** *)
 
