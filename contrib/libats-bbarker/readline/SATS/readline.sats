@@ -51,4 +51,16 @@ symintr readline
 
 fun readline_string
   (prompt: string): string = "mac#readline"
-overload readline with readline_string
+overload readline with readline_string of 0
+
+fun readline_string_n
+  (prompt: string): string = "mac#readline"
+overload readline with readline_string_n of 10
+
+fun readline_strptr
+  (prompt: strptr): string = "mac#readline"
+overload readline with readline_strptr of 100
+
+fun readline_strptr_l
+  {l:addr} (prompt: !strptr): string = "mac#readline"
+overload readline with readline_strptr_l of 1000

@@ -12,4 +12,4 @@ If so, research several REPLs, and find best prototype to implement in ATS.
 ----------
 
 Alternative using a C compiler:
-Everything entered into an interpeter can be viewed as a
+Can everything entered into an interpeter can be viewed as a separate fun*/object?
