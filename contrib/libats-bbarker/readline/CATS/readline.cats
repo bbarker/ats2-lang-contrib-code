@@ -34,8 +34,8 @@
 
 /* ****** ****** */
 
-#ifndef READLINELIB_CATS
-#define READLINELIB_CATS
+#ifndef READLINE_CATS
+#define READLINE_CATS
 
 /* ****** ****** */
 
@@ -43,8 +43,12 @@
 
 /* ****** ****** */
 
-#define atscntrb_readlinelib_version RL_READLINE_VERSION
-#define atscntrb_readlinelib_version_major RL_VERSION_MAJOR
-#define atscntrb_readlinelib_version_minor RL_VERSION_MINOR
+#define atscntrb_readline_version RL_READLINE_VERSION
+#define atscntrb_readline_version_major RL_VERSION_MAJOR
+#define atscntrb_readline_version_minor RL_VERSION_MINOR
 
 /* ****** ****** */
+//
+// commonly used functions
+//
+#define atscntrb_readline_readline readline

@@ -1,0 +1,2 @@
+This will be a first pass at creating an REPL interpreter for ATS
+using the ROOT/CINT C interpreter (http://root.cern.ch/). 

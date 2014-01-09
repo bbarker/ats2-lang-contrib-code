@@ -1,0 +1,15 @@
+Understand how well CINT can deal with ATS-generated code.
+
+Is there a callable interface in ROOT that can be used for an interpreter?
+If so, can we program it to show the ATS expression but evaulate the generated C code?
+
+If not, can we run CINT from the command line (much like a server, with the interpreted
+session run in the background)? 
+
+If so, research several REPLs, and find best prototype to implement in ATS.
+
+
+----------
+
+Alternative using a C compiler:
+Everything entered into an interpeter can be viewed as a

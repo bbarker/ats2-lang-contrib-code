@@ -44,4 +44,11 @@
 #include "readline/CATS/readline.cats"
 %} // end of [%{#]
 
+
 (* ****** ****** *)
+
+symintr readline
+
+fun readline_string
+  (prompt: string): String1 = mac"#%"
+overload readline with readline_string
