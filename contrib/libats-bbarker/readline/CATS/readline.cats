@@ -36,6 +36,7 @@
 
 #ifndef READLINE_CATS
 #define READLINE_CATS
+#endif
 
 /* ****** ****** */
 

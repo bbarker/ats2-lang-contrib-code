@@ -41,7 +41,7 @@
 (* ****** ****** *)
 
 %{#
-#include "readline/CATS/readline.cats"
+#include "libats-bbarker/readline/CATS/readline.cats"
 %} // end of [%{#]
 
 
@@ -50,5 +50,5 @@
 symintr readline
 
 fun readline_string
-  (prompt: string): strptr = "mac#readline"
+  (prompt: string): string = "mac#readline"
 overload readline with readline_string
