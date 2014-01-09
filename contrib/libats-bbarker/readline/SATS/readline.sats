@@ -50,5 +50,5 @@
 symintr readline
 
 fun readline_string
-  (prompt: string): String1 = mac"#%"
+  (prompt: string): strptr = "mac#readline"
 overload readline with readline_string
